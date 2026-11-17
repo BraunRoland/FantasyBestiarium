@@ -13,7 +13,10 @@ namespace FantasyBestiarium
             this.szornyek = szornyek;
         }
 
-
+        public int OsszesSzornySzama()
+        {
+            return szornyek.Count;
+        }
 
         internal List<Szorny> Szornyek { get => szornyek; }
     }
