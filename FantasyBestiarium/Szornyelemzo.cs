@@ -41,6 +41,7 @@ namespace FantasyBestiarium
                     elohelyek.Add(szorny.Elohely);
                 }
             }
+            elohelyek.Sort((x, y) => String.Compare(x, y));
             return elohelyek;
         }
 

@@ -27,7 +27,7 @@ namespace FantasyBestiarium
 
         public override string ToString()
         {
-            return $"név: {this.Nev} | veszélyességi szint: {this.VeszelyessegiSzint} | élőhelye: {this.Elohely}\n\tfő gyengesége: {this.FoGyengeseg} | leggyakoribb zsákmánya: {this.LeggyakoribbZsakmany} | veszélyes?: {this.veszelyesE}";
+            return $"név: {this.Nev} | veszélyességi szint: {this.VeszelyessegiSzint} | élőhelye: {this.Elohely}\n\tfő gyengesége: {this.FoGyengeseg} | leggyakoribb zsákmánya: {this.LeggyakoribbZsakmany} | veszélyes?: {this.veszelyesE}\n";
         }
 
         public int Id { get => id; }
