@@ -25,9 +25,14 @@ namespace FantasyBestiarium
             this.veszelyesE = veszelyesE;
         }
 
+        public override string ToString()
+        {
+            return $"név: {this.Nev} | veszélyességi szint: {this.VeszelyessegiSzint} | élőhelye: {this.Elohely}\n\tfő gyengesége: {this.FoGyengeseg} | leggyakoribb zsákmánya: {this.LeggyakoribbZsakmany} | veszélyes?: {this.veszelyesE}";
+        }
+
         public int Id { get => id; }
         public string Nev { get => nev; }
-        public int VeszelyessegiSzint { get => veszelyessegiSzint; 
+        public int VeszelyessegiSzint { get => veszelyessegiSzint; }
         public string Elohely { get => elohely; }
         public string FoGyengeseg { get => foGyengeseg; }
         public string LeggyakoribbZsakmany { get => leggyakoribbZsakmany; }

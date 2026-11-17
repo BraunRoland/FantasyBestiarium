@@ -18,7 +18,7 @@ namespace FantasyBestiarium
             return szornyek.Count;
         }
 
-        public List<string> VeszelyesSzornyekSzama()
+        public List<string> VeszelyesSzornyekNeve()
         {
             List<string> szornyekNeve = new List<string>();
             foreach (Szorny szorny in szornyek)
