@@ -31,6 +31,19 @@ namespace FantasyBestiarium
             return szornyekNeve;
         }
 
+        public List<string> EgyediElohelyek()
+        {
+            List<string> elohelyek = new List<string>();
+            foreach (Szorny szorny in szornyek)
+            {
+                if (!elohelyek.Contains(szorny.Elohely))
+                {
+                    elohelyek.Add(szorny.Elohely);
+                }
+            }
+            return elohelyek;
+        }
+
         internal List<Szorny> Szornyek { get => szornyek; }
     }
 }
