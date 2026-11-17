@@ -98,6 +98,23 @@ namespace FantasyBestiarium
             return false;
         }
 
+        public Dictionary<string, int> SzornyekSzamaElohelyenkent()
+        {
+            Dictionary<string, int> elohelyek = new Dictionary<string, int>();
+            foreach (Szorny szorny in szornyek)
+            {
+               if(!elohelyek.Keys.Contains(szorny.Elohely))
+               {
+                    elohelyek.Add(szorny.Elohely, 1);
+               }
+                else
+                {
+                    elohelyek[szorny.Elohely] += 1;
+                }
+            }
+            return elohelyek;
+        }
+
         internal List<Szorny> Szornyek { get => szornyek; }
     }
 }
