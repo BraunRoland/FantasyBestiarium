@@ -72,6 +72,20 @@ namespace FantasyBestiarium
             return sz;
         }
 
+        public List<Szorny> MocsariVeszelyesSzornyek()
+        {
+            List<Szorny> sz = new List<Szorny>();
+            foreach (Szorny szorny in szornyek)
+            {
+                if (szorny.Elohely == "Fekete Mocsár" && szorny.VeszelyessegiSzint >= 5)
+                {
+                    sz.Add(szorny);
+                }
+            }
+            sz.Sort((x, y) => (y.VeszelyessegiSzint - x.VeszelyessegiSzint));
+            return sz;
+        }
+
         internal List<Szorny> Szornyek { get => szornyek; }
     }
 }
