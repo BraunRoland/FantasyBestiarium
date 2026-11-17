@@ -44,6 +44,16 @@ namespace FantasyBestiarium
             return elohelyek;
         }
 
+        public double AtlagosVeszelyesseg()
+        {
+            double atlag = 0;
+            foreach(Szorny szorny in szornyek)
+            {
+                atlag += szorny.VeszelyessegiSzint;
+            }
+            return atlag/szornyek.Count;
+        }
+
         internal List<Szorny> Szornyek { get => szornyek; }
     }
 }
