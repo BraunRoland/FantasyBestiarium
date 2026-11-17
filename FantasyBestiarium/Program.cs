@@ -42,7 +42,8 @@ foreach (Szorny sz in mocsar)
     Console.WriteLine($"\t{sz.ToString()}");
 }
 
-Console.WriteLine($"\nVan tűzre gyenge szörny?: {szE.VanExtremTuzGyengeSzorny()}");
+string res = szE.VanExtremTuzGyengeSzorny()? "van" : "nincs";
+Console.WriteLine($"\nVan tűzre gyenge szörny?: {res}");
 Console.WriteLine("------------------------");
 
 Dictionary<string, int> elohelyek = szE.SzornyekSzamaElohelyenkent();
