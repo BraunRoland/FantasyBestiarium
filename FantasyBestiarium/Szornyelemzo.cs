@@ -86,6 +86,18 @@ namespace FantasyBestiarium
             return sz;
         }
 
+        public bool  VanExtremTuzGyengeSzorny()
+        {
+            foreach (Szorny szorny in szornyek)
+            {
+                if (szorny.FoGyengeseg == "Tűz" && szorny.VeszelyessegiSzint > 9)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         internal List<Szorny> Szornyek { get => szornyek; }
     }
 }
